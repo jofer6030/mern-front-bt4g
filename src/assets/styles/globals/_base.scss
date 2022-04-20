@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+.contenedor {
+    background: $bg-body;
+    width: 90%;
+    max-width: 180rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    background-color: $gris-claro;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    border: none;
+    flex: 1;
+    font-size: 1.6rem;
+    width: 40rem;
+}
+input[type="submit"] {
+    background-color: #1048a4;
+    background-color: $blanco;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: $azul;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    width: 85%;
+    transition: background-color 300ms ease;
+    font-family: inherit;
+    border-radius: 10px;
+    border: 1px solid $azul;
+}
+input[type="submit"]:hover {
+    background-color: #042a67;
+    background-color: $azul;
+    color: $blanco;
+    cursor: pointer;
+}
+.container {
+    max-width: 1511px;
+    margin: 0 auto;
+    padding: 0px 65px 0 87px;
+}

@@ -1,0 +1,22 @@
+.aside.login{
+    width: 48%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('/src/assets/images/bgleft.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.aside.signup{
+    width: 48%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('/src/assets/images/bgright.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% ;
+}
