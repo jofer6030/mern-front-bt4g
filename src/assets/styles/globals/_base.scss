@@ -67,3 +67,13 @@ input[type="submit"]:hover {
     margin: 0 auto;
     padding: 0px 65px 0 87px;
 }
+
+.success {
+    margin-top: 1rem;
+  color: white;
+  background-color: green;
+  padding: 0.5rem 3rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

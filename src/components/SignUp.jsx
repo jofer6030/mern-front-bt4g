@@ -22,6 +22,8 @@ const SignUp = () => {
     password: '',
     confirm_password: ''
   })
+  const [registerSucces,setRegisterSucces] = useState('')
+
   
 
   const handleChangle = (e) => {
@@ -73,10 +75,10 @@ const SignUp = () => {
     }
     
     try {
-      const data = await axios.post('http://localhost:8000/api/v1/users/register',campos)
-      console.log(data)
+      const {data} = await axios.post('http://localhost:8000/api/v1/users/register',campos)
+      setRegisterSucces(data.msg)
     } catch (error) {
-      console.log(error.response)
+      setErrors({...errors, all: error.response.data.msg})
     }
   }
 
@@ -103,6 +105,7 @@ const SignUp = () => {
           <img src={line} alt="" />
         </div>
         {errors.all && <p className="error_all">{ errors.all }</p>}
+        {registerSucces && <p className="success">{registerSucces}</p>}
         <form className='form' onSubmit={handleSubmit}>
           <div className="form__inputs">
             <input name="username" type="text" placeholder='Full name' onChange={handleChangle} />
